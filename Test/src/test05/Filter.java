@@ -14,7 +14,7 @@ public class Filter {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> list = new ArrayList<>();
         while (true) {
-            System.out.println("请输入一个字符串：是否退出");
+            System.out.println("请输入一个字符串：是否退出(是或否)");
             String str = sc.next();
             if ("是".equals(str)) {
                 break;
