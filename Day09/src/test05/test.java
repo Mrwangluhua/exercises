@@ -6,14 +6,24 @@ public class test {
         man.setBumen("销售部");
         man.setID("M001");
         man.setName("张小强");
-        Clerk cle = new Clerk();
-        cle.setBumen("销售部");
-        cle.setID("C001");
-        cle.setName("李小亮");
-        man.setC(cle);
-        cle.setManager(man);
+
+        Clerk cle1 = new Clerk();
+        cle1.setBumen("销售部");
+        cle1.setID("C001");
+        cle1.setName("李小亮");
+
+        Clerk cle2 = new Clerk();
+        cle2.setBumen("销售部");
+        cle2.setID("C002");
+        cle2.setName("赵亮");
+
+        man.setC(cle1);
+        man.setC(cle2);
+        cle1.setManager(man);
+        cle2.setManager(man);
 
         man.show();
-        cle.show();
+        cle1.show();
+        cle2.show();
     }
 }
