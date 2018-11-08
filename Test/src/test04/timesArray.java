@@ -1,5 +1,6 @@
 package test04;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
@@ -18,7 +19,6 @@ public class timesArray {
         String smallArray = sc.next();
         int times = chack1(bigArray,smallArray);
         System.out.println("小字符串"+smallArray+"，在大字符串中共出现"+times+"次");
-
     }
     private static int chack(String bigArray,String smallArray){
         int count = 0;
