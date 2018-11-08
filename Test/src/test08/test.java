@@ -37,14 +37,14 @@ public class test {
             System.out.println("用户名错误");
         }
         if(ch ==1){
-            System.out.println("恭喜登陆");
+            System.out.println(name+"=====恭喜登陆====");
         }
         if(ch ==2){
             System.out.println("密码错误");
         }
     }
 
-    public static int chack(ArrayList<User> users, String name, String password) {
+    private static int chack(ArrayList<User> users, String name, String password) {
         int ch = 0;//没变的话，就是用户名错误
         for (int i = 0; i < users.size(); i++) {
             if (name.equals(users.get(i).getName())) {
@@ -53,8 +53,6 @@ public class test {
                 } else {
                     ch = 2;//密码错误返回2
                 }
-            }else{
-                continue;
             }
         }
         return ch;
