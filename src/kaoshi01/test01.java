@@ -9,16 +9,16 @@ public class test01 {
         Student student3 = new Student("王五",38,50);
 
         ArrayList<Student> list = new ArrayList<>();
-        ArrayList<Student> list1 = new ArrayList<>();
+
         list.add(student1);
         list.add(student2);
         list.add(student3);
-        list1 = filterStudent(list,60);
+        ArrayList<Student> list1= filterStudent(list,60);
         for (int i = 0; i < list1.size(); i++) {
             System.out.println(list1.get(i).getName()+","+list1.get(i).getAge()+","+list1.get(i).getScore());
         }
     }
-    public static ArrayList<Student> filterStudent(ArrayList<Student>list ,int score){
+    private static ArrayList<Student> filterStudent(ArrayList<Student>list ,int score){
         ArrayList<Student> students = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             Student student = list.get(i);//如果要从list 取出值，必须要用list集合的下标进行操作

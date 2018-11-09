@@ -9,6 +9,7 @@ public class test {
         Goods goods2 = new Goods("键盘","g10001",999,3);
         Goods goods3 = new Goods("鼠标","g10002",55,5);
 
+
         GouWuChe gouWuChe = new GouWuChe();
         System.out.println("===========添加商品==========");
         gouWuChe.add(goods1);

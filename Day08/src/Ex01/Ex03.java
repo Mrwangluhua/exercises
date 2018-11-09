@@ -14,7 +14,7 @@ public class Ex03 {
         System.out.println(name2.toString());
 
     }
-    public static String getPropertyGetMethodName(String property){
+    private static String getPropertyGetMethodName(String property){
         String str = "get";
         char[] ch = property.toCharArray();
         ch[0]=(char)(ch[0]-32);
@@ -23,7 +23,7 @@ public class Ex03 {
         }
         return str;
     }
-    public static String getPropertySetMethodName(String property){
+    private static String getPropertySetMethodName(String property){
         String str ="set";
         char[] ch = property.toCharArray();
         ch[0]=(char)(ch[0]-32);

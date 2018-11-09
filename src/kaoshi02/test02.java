@@ -12,7 +12,7 @@ public class test02 {
         System.out.println("请输入8个300-400之间的数：");
         getArrayList(sc, list);
         for (int i = 0; i < list.size(); i++) {
-            if(list.get(i)%2 == 0){
+            if(!((list.get(i)&1)==1)){
                 oushulist.add(list.get(i));
             }
             else{
