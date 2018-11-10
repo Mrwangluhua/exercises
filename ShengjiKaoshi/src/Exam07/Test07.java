@@ -1,4 +1,7 @@
 package Exam07;
+
+import Exam08.Star;
+
 /*根据面向对象的要求完成如下功能：
 1. 定义描述汽车功能的接口（CarAction）
          抽象方法：  void  carrypassenger()
@@ -25,4 +28,11 @@ Ps:XXX为变量name的属性值，YYY为变量time的属性值，ZZZ为变量des
  carrypassenger() ，transportRoute(Station station) 方法。
 */
 public class Test07 {
+    public static void main(String[] args) {
+        Bus bus = new Bus("618");
+        Station station = new Station("9:30","北京西站");
+        bus.refueling();
+        bus.carrypassenger();
+        bus.transportRoute(station);
+    }
 }
