@@ -9,10 +9,8 @@ void show()
 要求：输出"需要打印的内容, 标题: xxx, 内容: yyy"
 注意： xxx为变量title的值，yyy为变量content值
 (3)生成所有成员变量的set/get方法,空参/满参构造
-
 2.定义Printable接口，要求如下：
 		(1)定义抽象方法： void printColor(Content content)
-
 (2)定义默认方法:   void printBlack(Content content)
 a.首先,输出以下内容:
 "开始打印黑白的内容..."
@@ -56,7 +54,6 @@ c.调用参数printer的功能完成打印
 如果参数为1,调用printer的printBlack(Content content)方法
 否则,调用printer的printColor(Content content)方法
 (3)生成所有成员变量的set/get方法,空参/满参构造
-
 5.定义测试类Test05，在main方法实现以下功能：
 (1)调用Printable接口的静态方法welcome()
 	(2)创建Printer类的对象printer
