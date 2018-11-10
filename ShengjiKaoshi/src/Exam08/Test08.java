@@ -24,6 +24,15 @@ Ps:XXX为变量id的属性值，YYY为category的属性值，ZZZ为变量name的
 PS：  KKK为类Director变量name值，参数star需要自行创建并初始化变量id,name与 category
 5. 测试类Test08，提供main方法
         创建导演类(Director)对象 ，调用letPlay(Actor a)方法。
+         a为Actor 的实现类，需要实现play(Star star)抽象方法，
+          实现要求：调用参数star的work()方法;
 */
 public class Test08 {
+    public static void main(String[] args) {
+        Director director = new Director(78,"张艺谋");
+        Star sr = new Star(2,"王菲","唱歌类");
+        A a = new A();
+        director.letPlay(a,sr);
+
+    }
 }

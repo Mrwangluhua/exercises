@@ -71,4 +71,14 @@ c.调用参数printer的功能完成打印
 	(6)调用Printable接口的静态方法feedback()
 */
 public class Test05 {
+    public static void main(String[] args) {
+        Printable.welcome();
+        Printer printer = new Printer();
+        Content content = new Content("面向对象的三大特征:","封装，继承，多态");
+        Worker worker = new Worker("李四","w001");
+        worker.work(printer,content,1);
+        System.out.println("=========================");
+        worker.work(printer,content,2);
+        Printable.feedback();
+    }
 }

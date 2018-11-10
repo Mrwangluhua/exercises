@@ -21,7 +21,8 @@ package Exam07;
                void transportRoute(Station station)  输出“XXX车已经在YYY点到达了ZZZ站”
 Ps:XXX为变量name的属性值，YYY为变量time的属性值，ZZZ为变量destination的属性值
 5. Test07测试类 测试以上内容的正确性。编写main方法：
-创建并初始化1个Bus对象bus和一个Station对象station， 调用bus对象的refueling（）， carrypassenger() ，transportRoute(Station station) 方法。
+创建并初始化1个Bus对象bus和一个Station对象station， 调用bus对象的refueling（），
+ carrypassenger() ，transportRoute(Station station) 方法。
 */
 public class Test07 {
 }
